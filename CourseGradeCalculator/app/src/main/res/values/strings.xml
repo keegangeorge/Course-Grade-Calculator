@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Grade Calculator</string>
+    <string name="strAssign">Assignments (15%)</string>
+    <string name="strParticip">Participation (15%)</string>
+    <string name="strProject">Projects (20%)</string>
+    <string name="strQuiz">Quizzes (20%)</string>
+    <string name="strExam">Exam (30%)</string>
+    <string name="strFinal">Final Mark</string>
+    <string name="strSetExamMark">Set Exam Mark:</string>
+    <string name="strResetBtn">Reset All</string>
+</resources>

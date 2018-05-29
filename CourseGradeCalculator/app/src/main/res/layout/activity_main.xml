@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryAlternate"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:stretchColumns="0"
+        android:shrinkColumns="0"
+        android:padding="16dp">
+
+        <!-- Assignments Row -->
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:background="#1b246f">
+
+            <TextView
+                android:textColor="@color/primaryText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dip"
+                android:text="@string/strAssign"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etAssignment"
+                android:backgroundTint="@color/primaryText"
+                android:ems="5"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/bright" />
+        </TableRow>
+
+        <!-- Participation Row -->
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:background="#1b246f">
+
+            <TextView
+                android:textColor="@color/primaryText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dip"
+                android:text="@string/strParticip"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etParticipation"
+                android:backgroundTint="@color/primaryText"
+                android:ems="5"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/bright" />
+        </TableRow>
+
+
+        <!-- Projects Row -->
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:background="#1b246f">
+
+            <TextView
+                android:textColor="@color/primaryText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dip"
+                android:text="@string/strProject"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etProjects"
+                android:backgroundTint="@color/primaryText"
+                android:ems="5"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/bright" />
+        </TableRow>
+
+        <!-- Quiz Row -->
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:background="#1b246f">
+
+            <TextView
+                android:textColor="@color/primaryText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dip"
+                android:text="@string/strQuiz"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etQuizzes"
+                android:backgroundTint="@color/primaryText"
+                android:ems="5"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/bright" />
+        </TableRow>
+
+        <!-- Exam Row -->
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:background="#1b246f">
+
+            <TextView
+                android:textColor="@color/primaryText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dip"
+                android:text="@string/strExam"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etExam"
+                android:backgroundTint="@color/primaryText"
+                android:ems="5"
+                android:clickable="false"
+                android:focusable="false"
+                android:longClickable="false"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/bright" />
+        </TableRow>
+
+        <!-- Set Exam Mark Row -->
+        <TableRow
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:background="#1b246f">
+
+            <TextView
+                android:textColor="@color/primaryText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dip"
+                android:layout_weight="1"
+                android:text="@string/strSetExamMark"
+                android:textSize="14sp"/>
+
+            <SeekBar
+                android:id="@+id/examSeekBar"
+                android:layout_height="match_parent"
+                android:layout_width="0dip"
+                android:layout_weight="2"
+                android:indeterminate="false"
+                android:backgroundTintMode="@color/colorAccent"
+                android:max="100"
+                android:progress="80"/>
+        </TableRow>
+
+        <!-- Final Mark Row -->
+        <TableRow
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dip"
+                android:text="@string/strFinal"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/etFinalMark"
+                android:backgroundTint="#10FFFFFF"
+                android:cursorVisible="false"
+                android:ems="5"
+                android:clickable="false"
+                android:focusable="false"
+                android:longClickable="false"
+                android:textColor="@color/bright" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="194dp"
+            android:layout_height="38dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/strResetBtn"
+            android:textColor="@color/primaryText"/>
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>
